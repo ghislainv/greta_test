@@ -2,4 +2,4 @@
 
 Test of the greta R package <https://goldingn.github.io/greta/>
 
-![MCMC traces](fig/traces.pdf)
+![MCMC traces](fig/traces.png)
