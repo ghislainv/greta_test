@@ -12,5 +12,8 @@ distribution(y) = normal(mean, sd)
 
 m <- model(int, coef, sd)
 
-draws <- mcmc(m, n_samples = 1000)
-bayesplot::mcmc_trace()
+draws <- mcmc(m, n_samples=1000)
+
+pdf("fig/traces.pdf")
+bayesplot::mcmc_trace(draws)
+dev.off()
