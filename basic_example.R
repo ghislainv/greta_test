@@ -14,6 +14,6 @@ m <- model(int, coef, sd)
 
 draws <- mcmc(m, n_samples=1000)
 
-pdf("fig/traces.pdf")
+png("fig/traces.png")
 bayesplot::mcmc_trace(draws)
 dev.off()
